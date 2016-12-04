@@ -1,4 +1,3 @@
 vacondos_core:
   host: "http://vacondos_core.dev"
   path: 'homes.json'
-
