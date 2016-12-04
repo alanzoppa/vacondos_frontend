@@ -8,7 +8,7 @@ class CondoList extends React.Component {
   componentDidMount() {
     component = this;
     $.ajax({
-      url: "http://vacondos_frontend.dev/search.json",
+      url: "/search.json",
       data: {zip: "60654"}
     }).done(function(data, status, request) {
       console.log(data);
