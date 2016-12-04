@@ -10,8 +10,8 @@ class SearchController < ApplicationController
 
   def search(params)
     uri = URI.join(
-      "http://vacondos_core.dev",
-      "homes.json?#{params.to_h.to_query}"
+      CONFIG.clients.vacondos_core.host,
+      "#{CONFIG.clients.vacondos_core.path}?#{params.to_h.to_query}"
     )
     output = JSON.parse(open(uri).read)
     return output

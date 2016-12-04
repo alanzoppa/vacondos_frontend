@@ -11,6 +11,7 @@ class CondoList extends React.Component {
       url: "http://vacondos_frontend.dev/search.json",
       data: {zip: "60654"}
     }).done(function(data, status, request) {
+      console.log(data);
       component.setState({searchResults: data});
     })
   }

@@ -51,3 +51,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'react-rails'
 gem 'react-router-rails', '~>0.13.3.2'
+gem 'figgy'
