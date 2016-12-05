@@ -28,6 +28,7 @@ class CondoList extends React.Component {
                 name={result.condo_name}
                 status={result.status}
                 address={result.address}
+                coordinates={result.coordinates}
               />
           )
         }

@@ -19,6 +19,10 @@ class Condo extends React.Component {
           zip={this.props.address.zip}
           country={this.props.address.country}
         />
+        <Coordinates
+          latitude={this.props.coordinates.latitude}
+          longitude={this.props.coordinates.longitude}
+        />
       </div>
     );
   }
