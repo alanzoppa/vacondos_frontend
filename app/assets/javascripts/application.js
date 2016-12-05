@@ -13,6 +13,6 @@
 //= require jquery
 //= require react
 //= require react_ujs
-//= require react_router
+//= require ReactRouter
 //= require components
 //= require_tree .
