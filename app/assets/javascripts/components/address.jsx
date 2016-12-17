@@ -1,6 +1,6 @@
+import React from 'react';
 
-
-class Address extends React.Component { 
+export default class Address extends React.Component { 
   constructor(props) {
     super(props);
     this.style = {

@@ -10,9 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require react
-//= require react_ujs
-//= require ReactRouter
-//= require components
-//= require_tree .
+import React from 'react';
+import { render } from 'react-dom';
+
+import Application from './components/application.jsx'
+
+
+//Application = require('./components/application.jsx').default
+
+render(<Application />, document.getElementById('application'))

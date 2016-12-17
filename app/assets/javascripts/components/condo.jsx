@@ -1,4 +1,8 @@
-class Condo extends React.Component {
+import React from 'react';
+import Address from './address.jsx'
+import Coordinates from './coordinates.jsx'
+
+export default class Condo extends React.Component {
   constructor(props) {
     super(props);
     this.style = {

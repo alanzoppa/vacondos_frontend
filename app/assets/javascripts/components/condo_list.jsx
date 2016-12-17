@@ -1,4 +1,8 @@
-class CondoList extends React.Component {
+import React from 'react';
+import $ from 'jquery';
+import Condo from './condo.jsx'
+
+export default class CondoList extends React.Component {
 
   constructor(props) {
     super(props);
@@ -6,7 +10,7 @@ class CondoList extends React.Component {
   }
 
   componentDidMount() {
-    component = this;
+    const component = this;
     $.ajax({
       url: "/search.json",
       data: {zip: "60654"}
