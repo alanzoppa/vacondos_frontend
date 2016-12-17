@@ -18,4 +18,6 @@ import Application from './components/application.jsx'
 
 //Application = require('./components/application.jsx').default
 
-render(<Application />, document.getElementById('application'))
+document.addEventListener("DOMContentLoaded", function(event) {
+  render(<Application />, document.getElementById('application'))
+})
