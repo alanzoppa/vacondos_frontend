@@ -7,7 +7,7 @@ ADD Gemfile /vacondos_frontend/Gemfile
 ADD Gemfile.lock /vacondos_frontend/Gemfile.lock
 ADD package.json /vacondos_frontend/package.json
 RUN npm install
-RUN bundle install --deployment
+RUN bundle install --without test development
 ADD . /vacondos_frontend
 RUN rake assets:precompile --trace
 ENV SECRET_KEY_BASE=faafa6e1f2d6c5cd672c4c3657ba68f5e0362cb199e360225b570bb5f554e8a427cbed9c0387b1ffc9735338c18cbd494b58795ec0c4764e805d2e45f325be17
