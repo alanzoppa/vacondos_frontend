@@ -1,5 +1,5 @@
 FROM ruby:2.3
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs npm
+RUN apt-get update -qq && apt-get install -y build-essential patch libpq-dev nodejs npm
 RUN mkdir /vacondos_frontend
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 WORKDIR /vacondos_frontend
